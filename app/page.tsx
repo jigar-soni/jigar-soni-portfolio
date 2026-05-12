@@ -199,33 +199,59 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="mt-10 grid gap-5 lg:grid-cols-2">
-            {[
-              {
-                tag: 'Ethnicwear · Customer Acquisition',
-                title: 'Scaling an ethnicwear brand through creative strategy',
-                desc: 'Balanced catalogue growth with creative refresh cycles, scaled spend while maintaining efficiency, and aligned campaigns with category-specific buying rhythms.',
-              },
-              {
-                tag: 'Multi-Brand · Paid Media Operations',
-                title: '₹60 lakh monthly portfolio across D2C categories',
-                desc: 'Managed budgets, performance cadence, and account-level optimization frameworks across apparel, skincare, and lifestyle brands.',
-              },
-            ].map((item) => (
-              <TiltCard
-                key={item.title}
-                className="group rounded-[24px] border border-subtle bg-white shadow-soft transition-shadow hover:shadow-card"
-              >
-                <Link href="/work" className="block p-7">
-                  <p className="text-[11px] uppercase tracking-label text-muted">{item.tag}</p>
-                  <h3 className="mt-4 text-[1.05rem] font-semibold leading-snug text-ink">{item.title}</h3>
-                  <p className="mt-3 text-[13.5px] leading-relaxed text-muted">{item.desc}</p>
-                  <p className="mt-5 text-[12.5px] font-medium text-ink opacity-0 transition-opacity group-hover:opacity-100">
-                    Read more →
-                  </p>
-                </Link>
-              </TiltCard>
-            ))}
+          <div className="mt-10 space-y-5">
+            {/* Featured case study — full width */}
+            <TiltCard className="group rounded-[24px] border border-subtle bg-white shadow-soft transition-shadow hover:shadow-card">
+              <Link href="/work/skincare-national-expansion" className="block p-7 sm:p-9">
+                <p className="text-[11px] uppercase tracking-label text-muted">Skincare · Google Ads · Geographic Expansion</p>
+                <h3 className="mt-4 max-w-2xl text-[1.2rem] font-semibold leading-snug text-ink sm:text-[1.35rem]">
+                  +39% non-TN revenue growth for a skincare brand through Google Ads restructuring
+                </h3>
+                <p className="mt-3 max-w-2xl text-[13.5px] leading-relaxed text-muted">
+                  A TN-based skincare brand with strong home-market performance but stalled national growth. Rebuilt the account with state-level segmentation — Karnataka delivered 8.05x ROAS, Bihar went from 0.67x to 3.44x, UP from 1.58x to 3.52x. Non-TN revenue hit ₹2.77 crore.
+                </p>
+                <div className="mt-6 flex flex-wrap gap-4">
+                  {['+39% non-TN revenue', '8.05x ROAS (Karnataka)', '₹2.77Cr non-TN revenue'].map((stat) => (
+                    <span key={stat} className="rounded-full border border-subtle/60 bg-subtle/20 px-3.5 py-1.5 text-[12px] text-muted/80">
+                      {stat}
+                    </span>
+                  ))}
+                </div>
+                <p className="mt-5 text-[12.5px] font-medium text-ink opacity-0 transition-opacity group-hover:opacity-100">
+                  Read case study →
+                </p>
+              </Link>
+            </TiltCard>
+
+            {/* Secondary cards */}
+            <div className="grid gap-5 lg:grid-cols-2">
+              {[
+                {
+                  tag: 'Ethnicwear · Customer Acquisition',
+                  title: 'Scaling an ethnicwear brand through creative strategy',
+                  desc: 'Balanced catalogue growth with creative refresh cycles, scaled spend while maintaining efficiency, and aligned campaigns with category-specific buying rhythms.',
+                },
+                {
+                  tag: 'Multi-Brand · Paid Media Operations',
+                  title: '₹60 lakh monthly portfolio across D2C categories',
+                  desc: 'Managed budgets, performance cadence, and account-level optimization frameworks across apparel, skincare, and lifestyle brands.',
+                },
+              ].map((item) => (
+                <TiltCard
+                  key={item.title}
+                  className="group rounded-[24px] border border-subtle bg-white shadow-soft transition-shadow hover:shadow-card"
+                >
+                  <Link href="/work" className="block p-7">
+                    <p className="text-[11px] uppercase tracking-label text-muted">{item.tag}</p>
+                    <h3 className="mt-4 text-[1.05rem] font-semibold leading-snug text-ink">{item.title}</h3>
+                    <p className="mt-3 text-[13.5px] leading-relaxed text-muted">{item.desc}</p>
+                    <p className="mt-5 text-[12.5px] font-medium text-ink opacity-0 transition-opacity group-hover:opacity-100">
+                      Read more →
+                    </p>
+                  </Link>
+                </TiltCard>
+              ))}
+            </div>
           </div>
 
           <div className="mt-6 sm:hidden">
