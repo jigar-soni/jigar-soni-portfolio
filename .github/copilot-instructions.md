@@ -1,0 +1,4 @@
+- [ ] Scaffold a Next.js portfolio project with Tailwind CSS and Framer Motion.
+- [ ] Keep the design minimal, premium, and conversion-focused.
+- [ ] Use clean typography, calm color palette, and subtle motion.
+- [ ] Ensure mobile-first responsive layout.

@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: #fcfbf7;
+  color: #111111;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #fcfbf7;
+  color: #111111;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #c5ac97;
+  color: #111111;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Inter, system-ui, sans-serif;
+  color: #111111;
+}
+
+p {
+  line-height: 1.75;
+}
+
+section {
+  padding: 5rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 6rem 2rem;
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "categories": [
+    {
+      "name": "Websites",
+      "items": [
+        {
+          "title": "Linear",
+          "url": "https://linear.app",
+          "note": "The most beautiful product management tool on the internet. A masterclass in how software should feel."
+        },
+        {
+          "title": "Are.na",
+          "url": "https://www.are.na",
+          "note": "A quiet corner of the internet for collecting ideas without the noise of social media."
+        },
+        {
+          "title": "Sidebar.io",
+          "url": "https://sidebar.io",
+          "note": "Five design links every day. I have not missed a day in years."
+        }
+      ]
+    },
+    {
+      "name": "Blogs & Writing",
+      "items": [
+        {
+          "title": "Paul Graham's Essays",
+          "url": "https://paulgraham.com/articles.html",
+          "note": "Required reading for anyone who thinks about startups, ideas, or how to live an interesting life."
+        },
+        {
+          "title": "Not Boring by Packy McCormick",
+          "url": "https://www.notboring.co",
+          "note": "Business strategy made genuinely fun. The best thing I have read each week, most weeks."
+        },
+        {
+          "title": "The Generalist",
+          "url": "https://www.readthegeneralist.com",
+          "note": "Long-form breakdowns of the most interesting companies. The kind of writing that makes you think differently."
+        }
+      ]
+    },
+    {
+      "name": "YouTube Channels",
+      "items": [
+        {
+          "title": "Alex Hormozi",
+          "url": "https://www.youtube.com/@AlexHormozi",
+          "note": "The most practical business content on YouTube. No fluff, just frameworks that actually work."
+        },
+        {
+          "title": "Kurzgesagt",
+          "url": "https://www.youtube.com/@kurzgesagt",
+          "note": "Science and big ideas explained beautifully. I come here when I want my brain to feel small in a good way."
+        }
+      ]
+    },
+    {
+      "name": "Tools I Use",
+      "items": [
+        {
+          "title": "Notion",
+          "url": "https://notion.so",
+          "note": "My second brain. Everything I know, plan, and track lives here."
+        },
+        {
+          "title": "Loom",
+          "url": "https://www.loom.com",
+          "note": "The fastest way to replace a long email with a short video. Changed how I communicate with clients."
+        },
+        {
+          "title": "Perplexity",
+          "url": "https://www.perplexity.ai",
+          "note": "Search, but actually useful. My first stop for research now."
+        }
+      ]
+    }
+  ]
+}
