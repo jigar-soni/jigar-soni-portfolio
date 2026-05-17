@@ -99,51 +99,6 @@ const caseStudies: CaseStudy[] = [
   },
 ]
 
-const experience = [
-  {
-    role: 'Performance Marketing Manager',
-    company: 'Conversion Lab',
-    period: '12/2022 – Present',
-    description:
-      'Managing paid media for multiple e-commerce clients across D2C apparel, skincare, FMCG, and lifestyle categories. ₹70L+ cumulative monthly ad spend across Meta and Google. Key results include 7.6x ROAS on Google Ads for a skincare brand and 80% revenue growth for a D2C FMCG brand in 5 months.',
-  },
-  {
-    role: 'Digital Marketing Specialist',
-    company: 'Beforest',
-    period: '10/2021 – 12/2022',
-    description:
-      'Led paid media lead generation for a high-value real estate brand. Generated 10,000+ leads, reduced CPL by 60%, and contributed to closing 28 deals averaging ₹47L each. Also managed email campaigns and supported a full website redesign.',
-  },
-  {
-    role: 'Digital Marketing Specialist',
-    company: 'Hapup',
-    period: '10/2021 – 12/2022',
-    description:
-      "Concurrent role. Developed and executed Meta Ads campaigns for a millet-based D2C children's cereal brand. Managed Amazon Sponsored Ads and provided input on landing page optimisation and product listings.",
-  },
-  {
-    role: 'Digital Marketing Consultant',
-    company: 'Freelance',
-    period: '06/2020 – 09/2021',
-    description:
-      'Delivered Meta and Google Ads services to SMEs in India and the US across health, fashion, coaching, and services. Worked directly with clients, often as their sole marketing partner.',
-  },
-  {
-    role: 'Account Manager',
-    company: 'BellaVix',
-    period: '09/2019 – 06/2020',
-    description:
-      'Managed Amazon account operations for D2C clients across fashion, health, and supplements. Worked on A+ content, branded storefronts, and marketplace strategy for US-based brands — remotely from India.',
-  },
-  {
-    role: 'Digital Marketing Executive',
-    company: 'Conversion Bug',
-    period: '05/2017 – 09/2019',
-    description:
-      'Planned and executed Facebook Ads for e-commerce clients. Delivered campaigns for premium brands including Mercedes Benz, KIMS Hospitals, and Toni & Guy. Collaborated with creative teams on audience strategy and ad creative.',
-  },
-]
-
 export default function WorkPage() {
   return (
     <>
@@ -162,33 +117,6 @@ export default function WorkPage() {
 
       {/* Case studies with category filter */}
       <WorkCaseStudies caseStudies={caseStudies} />
-
-      {/* Experience */}
-      <section className="border-t border-subtle bg-white/50 px-5 py-16 sm:px-8">
-        <div className="mx-auto max-w-6xl">
-          <p className="text-[11.5px] uppercase tracking-label text-muted">Experience</p>
-          <h2 className="mt-5 font-display italic text-[1.8rem] font-normal tracking-tight text-ink">
-            Experience
-          </h2>
-          <div className="mt-10 space-y-5">
-            {experience.map((exp) => (
-              <div
-                key={`${exp.company}-${exp.period}`}
-                className="grid gap-3 rounded-[20px] border border-subtle bg-white p-6 shadow-soft sm:grid-cols-[200px_1fr] sm:gap-8"
-              >
-                <div>
-                  <p className="text-[11px] uppercase tracking-label text-muted">{exp.period}</p>
-                  <p className="mt-2 text-[13.5px] font-medium text-ink">{exp.company}</p>
-                </div>
-                <div>
-                  <p className="text-[16px] font-semibold text-ink">{exp.role}</p>
-                  <p className="mt-2 text-[13.5px] leading-loose text-muted">{exp.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA */}
       <section className="border-t border-subtle px-5 py-16 sm:px-8">
@@ -213,6 +141,12 @@ export default function WorkPage() {
                 className="rounded-full border border-subtle px-6 py-3.5 text-[13.5px] font-medium text-ink transition hover:border-muted/60"
               >
                 More about me
+              </Link>
+              <Link
+                href="/resume"
+                className="rounded-full border border-subtle px-6 py-3.5 text-[13.5px] font-medium text-ink transition hover:border-muted/60"
+              >
+                View resume
               </Link>
             </div>
           </div>

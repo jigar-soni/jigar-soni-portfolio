@@ -34,6 +34,7 @@ export default function Footer() {
             <p className="text-[11px] uppercase tracking-label text-muted/60">Pages</p>
             <div className="flex flex-col gap-2.5">
               <Link href="/work" className="text-[13px] text-muted transition-colors hover:text-ink">Work</Link>
+              <Link href="/resume" className="text-[13px] text-muted transition-colors hover:text-ink">Resume</Link>
               <Link href="/notes" className="text-[13px] text-muted transition-colors hover:text-ink">Notes</Link>
               <Link href="/favorites" className="text-[13px] text-muted transition-colors hover:text-ink">Finds</Link>
               <Link href="/about" className="text-[13px] text-muted transition-colors hover:text-ink">About</Link>
