@@ -8,6 +8,7 @@ export type CaseStudy = {
   id: string
   tag: string
   category: string
+  context: 'Agency · Client work' | 'In-house role'
   activeClient?: boolean
   title: string
   summary: string
@@ -69,10 +70,13 @@ export default function WorkCaseStudies({ caseStudies }: { caseStudies: CaseStud
                 <span className="rounded-full border border-subtle/60 bg-subtle/20 px-3 py-1 text-[11px] font-medium text-muted/80">
                   {item.category}
                 </span>
+                <span className="rounded-full border border-subtle/60 bg-white px-3 py-1 text-[11px] font-medium text-muted/80">
+                  {item.context}
+                </span>
                 {item.activeClient && (
                   <span className="inline-flex items-center gap-1.5 rounded-full border border-warm/40 bg-warm/10 px-3 py-1 text-[11px] font-medium text-warm">
                     <span className="h-1.5 w-1.5 rounded-full bg-warm" />
-                    Active engagement
+                    Active
                   </span>
                 )}
               </div>

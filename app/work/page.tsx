@@ -12,6 +12,7 @@ const caseStudies: CaseStudy[] = [
     id: 'inventory-intelligence',
     tag: 'Ethnicwear · Inventory Analysis · Growth Strategy',
     category: 'Growth Strategy',
+    context: 'Agency · Client work',
     activeClient: true,
     title: '₹12.33 crore sitting in out-of-stock products. We found it before the competition did.',
     summary:
@@ -30,6 +31,7 @@ const caseStudies: CaseStudy[] = [
     id: 'fmcg-revenue',
     tag: 'D2C FMCG · Revenue Growth · Meta & Google Ads',
     category: 'Paid Acquisition & Scaling',
+    context: 'Agency · Client work',
     activeClient: true,
     title: '₹30L to ₹54L monthly revenue in 5 months for a D2C FMCG brand',
     summary:
@@ -47,6 +49,7 @@ const caseStudies: CaseStudy[] = [
     id: 'skincare-roas',
     tag: 'Skincare · Google Ads · Geographic Expansion',
     category: 'GEO Lift',
+    context: 'Agency · Client work',
     activeClient: true,
     title: '+39% non-TN revenue growth for a skincare brand through Google Ads restructuring',
     summary:
@@ -65,6 +68,7 @@ const caseStudies: CaseStudy[] = [
     id: 'beforest-realestate',
     tag: 'Real Estate · Lead Generation · Meta & Google Ads',
     category: 'Paid Acquisition & Scaling',
+    context: 'In-house role',
     title: '10,000+ leads and 60% lower CPL for a high-value real estate brand',
     summary:
       'Beforest was a different kind of brief — high-ticket real estate with long sales cycles. The challenge was generating quality leads efficiently enough to make the economics work.',
@@ -81,6 +85,7 @@ const caseStudies: CaseStudy[] = [
     id: 'agency',
     tag: 'Agency · Multi-Industry · Facebook Ads',
     category: 'Paid Acquisition & Scaling',
+    context: 'Agency · Client work',
     title: 'Campaign delivery for Mercedes Benz, KIMS Hospitals & Toni & Guy',
     summary:
       'Early-career agency experience managing digital campaigns for premium brands across automotive, healthcare, and lifestyle — where disciplined process and structured reporting mattered as much as results.',
