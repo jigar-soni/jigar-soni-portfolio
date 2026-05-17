@@ -8,6 +8,22 @@ export const metadata: Metadata = {
 
 const caseStudies = [
   {
+    id: 'inventory-intelligence',
+    tag: 'Ethnicwear · Inventory Analysis · Growth Strategy',
+    title: '₹12.33 crore sitting in out-of-stock products. We found it before the competition did.',
+    summary:
+      "While managing paid media for this ethnicwear brand, conversion was consistently underperforming despite strong traffic. Creative, targeting, and landing pages all checked out. The problem was upstream — the best-selling products weren't available. I commissioned a 365-day inventory analysis across 9,745 SKUs to quantify the damage.",
+    details: [
+      '₹12.33 Cr in estimated revenue lost to stockouts over 365 days',
+      'Top 300 SKUs were out of stock for an average of 141 days (39% of the year)',
+      '41% of top 300 SKUs unavailable for 180+ days — more than half the year',
+      'Only 13% of top 300 SKUs maintained full availability',
+      'Modelled ₹17.92 Cr revenue potential with full stock availability (+220%)',
+    ],
+    note: 'Conversion Lab · Dec 2024 – Dec 2025',
+    caseStudyLink: '/work/inventory-intelligence',
+  },
+  {
     id: 'fmcg-revenue',
     tag: 'D2C FMCG · Revenue Growth · Meta & Google Ads',
     title: '₹30L to ₹54L monthly revenue in 5 months for a D2C FMCG brand',
