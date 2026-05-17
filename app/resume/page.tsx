@@ -12,6 +12,7 @@ const experience = [
     company: 'Conversion Lab',
     period: '12/2022 – Present',
     type: 'Agency',
+    workMode: 'Remote',
     description:
       'Managing paid media for multiple e-commerce clients across D2C apparel, skincare, FMCG, and lifestyle categories. ₹70L+ cumulative monthly ad spend across Meta and Google. Key results include 7.6x ROAS on Google Ads for a skincare brand and 80% revenue growth for a D2C FMCG brand in 5 months.',
   },
@@ -20,6 +21,7 @@ const experience = [
     company: 'Beforest',
     period: '10/2021 – 12/2022',
     type: 'In-house',
+    workMode: 'On-site · Hyderabad',
     description:
       'Led paid media lead generation for a high-value real estate brand. Generated 10,000+ leads, reduced CPL by 60%, and contributed to closing 28 deals averaging ₹47L each. Also managed email campaigns and supported a full website redesign.',
   },
@@ -28,6 +30,7 @@ const experience = [
     company: 'Hapup',
     period: '10/2021 – 12/2022',
     type: 'In-house',
+    workMode: 'On-site · Hyderabad',
     description:
       "Concurrent role. Developed and executed Meta Ads campaigns for a millet-based D2C children's cereal brand. Managed Amazon Sponsored Ads and provided input on landing page optimisation and product listings.",
   },
@@ -36,6 +39,7 @@ const experience = [
     company: 'Freelance',
     period: '06/2020 – 09/2021',
     type: 'Freelance',
+    workMode: 'Remote',
     description:
       'Delivered Meta and Google Ads services to SMEs in India and the US across health, fashion, coaching, and services. Worked directly with clients, often as their sole marketing partner.',
   },
@@ -44,6 +48,7 @@ const experience = [
     company: 'BellaVix',
     period: '09/2019 – 06/2020',
     type: 'Agency',
+    workMode: 'Remote · US-based agency',
     description:
       'Managed Amazon account operations for D2C clients across fashion, health, and supplements. Worked on A+ content, branded storefronts, and marketplace strategy for US-based brands — remotely from India.',
   },
@@ -52,6 +57,7 @@ const experience = [
     company: 'Conversion Bug',
     period: '05/2017 – 09/2019',
     type: 'Agency',
+    workMode: 'On-site · Hyderabad',
     description:
       'Planned and executed Facebook Ads for e-commerce clients. Delivered campaigns for premium brands including Mercedes Benz, KIMS Hospitals, and Toni & Guy. Collaborated with creative teams on audience strategy and ad creative.',
   },
@@ -141,9 +147,14 @@ export default function ResumePage() {
                 <div>
                   <p className="text-[11px] uppercase tracking-label text-muted">{exp.period}</p>
                   <p className="mt-2 text-[14px] font-semibold text-ink">{exp.company}</p>
-                  <span className={`mt-2 inline-block rounded-full border px-2.5 py-0.5 text-[11px] font-medium ${typeStyles[exp.type]}`}>
-                    {exp.type}
-                  </span>
+                  <div className="mt-2 flex flex-wrap gap-1.5">
+                    <span className={`inline-block rounded-full border px-2.5 py-0.5 text-[11px] font-medium ${typeStyles[exp.type]}`}>
+                      {exp.type}
+                    </span>
+                    <span className="inline-block rounded-full border border-subtle/60 bg-white px-2.5 py-0.5 text-[11px] font-medium text-muted/80">
+                      {exp.workMode}
+                    </span>
+                  </div>
                 </div>
                 <div>
                   <p className="text-[15.5px] font-semibold text-ink">{exp.role}</p>
