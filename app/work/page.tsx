@@ -1,15 +1,18 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import WorkCaseStudies, { type CaseStudy } from '../components/WorkCaseStudies'
 
 export const metadata: Metadata = {
   title: 'Work',
   description: 'Case studies and performance marketing work across D2C brands, e-commerce, and lead generation.',
 }
 
-const caseStudies = [
+const caseStudies: CaseStudy[] = [
   {
     id: 'inventory-intelligence',
     tag: 'Ethnicwear · Inventory Analysis · Growth Strategy',
+    category: 'Growth Strategy',
+    activeClient: true,
     title: '₹12.33 crore sitting in out-of-stock products. We found it before the competition did.',
     summary:
       "While managing paid media for this ethnicwear brand, conversion was consistently underperforming despite strong traffic. Creative, targeting, and landing pages all checked out. The problem was upstream — the best-selling products weren't available. I commissioned a 365-day inventory analysis across 9,745 SKUs to quantify the damage.",
@@ -26,6 +29,8 @@ const caseStudies = [
   {
     id: 'fmcg-revenue',
     tag: 'D2C FMCG · Revenue Growth · Meta & Google Ads',
+    category: 'Paid Acquisition & Scaling',
+    activeClient: true,
     title: '₹30L to ₹54L monthly revenue in 5 months for a D2C FMCG brand',
     summary:
       'At Conversion Lab, I managed paid acquisition and full-funnel growth for a D2C FMCG brand. The brief was to scale revenue while keeping margins healthy.',
@@ -41,9 +46,11 @@ const caseStudies = [
   {
     id: 'skincare-roas',
     tag: 'Skincare · Google Ads · Geographic Expansion',
+    category: 'GEO Lift',
+    activeClient: true,
     title: '+39% non-TN revenue growth for a skincare brand through Google Ads restructuring',
     summary:
-      'A TN-based skincare brand with strong home-market performance but stalled national growth. The problem wasn\'t ad spend — it was that national campaigns had no geographic visibility, so underperforming states were dragging down results from high-potential ones.',
+      "A TN-based skincare brand with strong home-market performance but stalled national growth. The problem wasn't ad spend — it was that national campaigns had no geographic visibility, so underperforming states were dragging down results from high-potential ones.",
     details: [
       'Non-Tamil Nadu Google Ads revenue grew 39% year-on-year to ₹2.77 crore',
       'Karnataka delivered 8.05x ROAS after state-level campaign restructuring',
@@ -57,6 +64,7 @@ const caseStudies = [
   {
     id: 'beforest-realestate',
     tag: 'Real Estate · Lead Generation · Meta & Google Ads',
+    category: 'Paid Acquisition & Scaling',
     title: '10,000+ leads and 60% lower CPL for a high-value real estate brand',
     summary:
       'Beforest was a different kind of brief — high-ticket real estate with long sales cycles. The challenge was generating quality leads efficiently enough to make the economics work.',
@@ -72,6 +80,7 @@ const caseStudies = [
   {
     id: 'agency',
     tag: 'Agency · Multi-Industry · Facebook Ads',
+    category: 'Paid Acquisition & Scaling',
     title: 'Campaign delivery for Mercedes Benz, KIMS Hospitals & Toni & Guy',
     summary:
       'Early-career agency experience managing digital campaigns for premium brands across automotive, healthcare, and lifestyle — where disciplined process and structured reporting mattered as much as results.',
@@ -105,7 +114,7 @@ const experience = [
     company: 'Hapup',
     period: '10/2021 – 12/2022',
     description:
-      'Concurrent role. Developed and executed Meta Ads campaigns for a millet-based D2C children\'s cereal brand. Managed Amazon Sponsored Ads and provided input on landing page optimisation and product listings.',
+      "Concurrent role. Developed and executed Meta Ads campaigns for a millet-based D2C children's cereal brand. Managed Amazon Sponsored Ads and provided input on landing page optimisation and product listings.",
   },
   {
     role: 'Digital Marketing Consultant',
@@ -146,51 +155,8 @@ export default function WorkPage() {
         </div>
       </section>
 
-      {/* Case studies — numbered editorial list */}
-      <section className="border-t border-subtle px-5 py-4 sm:px-8">
-        <div className="mx-auto max-w-6xl">
-          {caseStudies.map((item, index) => (
-            <article
-              key={item.id}
-              className="grid gap-6 border-b border-subtle py-14 last:border-none lg:grid-cols-[80px_1fr]"
-            >
-              <div className="hidden lg:block pt-1">
-                <span className="font-display italic text-[3.5rem] font-normal leading-none text-subtle select-none">
-                  {String(index + 1).padStart(2, '0')}
-                </span>
-              </div>
-              <div>
-                <p className="text-[11px] uppercase tracking-label text-muted">{item.tag}</p>
-                <h2 className="mt-3 text-[1.3rem] font-semibold leading-snug text-ink sm:text-[1.4rem]">
-                  {item.title}
-                </h2>
-                <p className="mt-3 max-w-2xl text-[14.5px] leading-loose text-muted">{item.summary}</p>
-                <ul className="mt-6 grid gap-2.5 sm:grid-cols-2">
-                  {item.details.map((d) => (
-                    <li key={d} className="flex items-start gap-2.5 text-[13.5px] leading-snug text-muted">
-                      <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-warm" />
-                      {d}
-                    </li>
-                  ))}
-                </ul>
-                <div className="mt-6 flex flex-wrap items-center gap-3">
-                  <div className="inline-flex rounded-full border border-subtle/60 bg-subtle/20 px-4 py-2">
-                    <p className="text-[12px] text-muted/80">{item.note}</p>
-                  </div>
-                  {'caseStudyLink' in item && (
-                    <Link
-                      href={(item as typeof item & { caseStudyLink: string }).caseStudyLink}
-                      className="inline-flex items-center gap-1.5 rounded-full border border-ink/20 bg-white px-4 py-2 text-[12px] font-medium text-ink shadow-soft transition hover:border-ink/50"
-                    >
-                      Full case study <span aria-hidden>→</span>
-                    </Link>
-                  )}
-                </div>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
+      {/* Case studies with category filter */}
+      <WorkCaseStudies caseStudies={caseStudies} />
 
       {/* Experience */}
       <section className="border-t border-subtle bg-white/50 px-5 py-16 sm:px-8">
