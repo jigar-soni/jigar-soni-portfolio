@@ -27,6 +27,14 @@ export default function Footer() {
               >
                 LinkedIn
               </a>
+              <a
+                href="https://x.com/ji9arsoni"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[13px] text-muted transition-colors hover:text-ink"
+              >
+                X
+              </a>
             </div>
           </div>
 

@@ -9,6 +9,20 @@ export type Note = {
 
 export const notes: Note[] = [
   {
+    slug: 'tools-evolve-principles-dont',
+    title: 'Tools evolve. Principles are timeless.',
+    date: '2026-05-19',
+    category: 'Thinking',
+    excerpt:
+      "The platforms change every year. What makes people buy hasn't changed in decades. Getting these two things confused is how you lose the plot.",
+    body: [
+      "Every year, the tools get smarter. Platforms launch new features, attribution models get rebuilt, and there is always something new to learn. This is the part of the job that keeps it interesting — and exhausting in equal measure.",
+      "But the platforms change faster than consumer behaviour does. The fundamentals of what makes people buy, stay, and come back haven't shifted. Urgency, trust, specificity, social proof, the gap between where someone is and where they want to be — these things worked in newspaper ads and they work in shopping campaigns.",
+      "I try to keep the two separate. When Meta launches a new campaign type or Google restructures Smart Bidding, I want to understand it quickly and adapt. But when something is not working, I go back to basics: Is the offer clear? Does the creative match the intent of the person seeing it? Is the landing page continuing the same story?",
+      "The tools are the medium. The principles are the message. Confusing the two is how you end up chasing every platform update and losing track of what actually moves the needle.",
+    ],
+  },
+  {
     slug: 'why-d2c-brands-plateau',
     title: 'Why most D2C brands plateau at a certain scale',
     date: '2024-11-20',

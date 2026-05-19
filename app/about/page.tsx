@@ -10,15 +10,19 @@ export const metadata: Metadata = {
 const interests = [
   {
     name: 'Fitness',
-    note: 'A consistent practice that sharpens focus and discipline outside of work.',
+    note: 'A consistent practice. More cardio than I would like, but it sharpens everything else.',
   },
   {
     name: 'Chess',
-    note: 'Strategy, patience, and pattern recognition — the thinking frameworks transfer directly to growth work.',
+    note: '600-day streak on Chess.com and still learning. Strategy, patience, and thinking several moves ahead — the frameworks transfer directly to how I approach growth.',
   },
   {
-    name: 'Traditional Craftsmanship',
-    note: 'A deep appreciation for Indian handloom, textile craft, and the slow work behind premium products.',
+    name: 'UX & Product Design',
+    note: 'Obsessively notice good and bad UX in the tools I use every day. A product that respects its users is the exception, not the rule.',
+  },
+  {
+    name: 'Language Learning',
+    note: 'Working through Spanish on Duolingo. Top 9% of global learners in 2025, which sounds more impressive than it is.',
   },
   {
     name: 'Business Strategy',
@@ -38,9 +42,9 @@ const keyNumbers = [
 ]
 
 const currently = [
-  { label: 'Reading', value: 'The Mom Test — Rob Fitzpatrick' },
+  { label: 'Reading', value: 'Click Here' },
   { label: 'Thinking about', value: 'How D2C brands build real pricing power' },
-  { label: 'Playing', value: 'Chess (still losing to 1500s, still learning)' },
+  { label: 'Fitness', value: 'Getting consistent at the gym. More cardio than I would like.' },
   { label: 'Looking for', value: 'Head of Growth or similar role at a D2C brand' },
 ]
 
@@ -79,7 +83,7 @@ export default function AboutPage() {
                 </div>
                 <p className="mt-6 text-[15px] font-semibold text-ink">Jigar Soni</p>
                 <p className="mt-1 text-[13px] text-muted">Performance Marketer · Gujarat, India</p>
-                <div className="mt-5 flex gap-3">
+                <div className="mt-5 flex flex-wrap gap-2">
                   <a
                     href="mailto:jigarsoni1310@gmail.com"
                     className="rounded-full bg-ink px-4 py-2 text-[12.5px] font-medium text-white transition-opacity hover:opacity-70"
@@ -93,6 +97,14 @@ export default function AboutPage() {
                     className="rounded-full border border-subtle px-4 py-2 text-[12.5px] font-medium text-ink transition hover:border-muted/60"
                   >
                     LinkedIn
+                  </a>
+                  <a
+                    href="https://x.com/ji9arsoni"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-full border border-subtle px-4 py-2 text-[12.5px] font-medium text-ink transition hover:border-muted/60"
+                  >
+                    X
                   </a>
                 </div>
               </div>
