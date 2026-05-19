@@ -20,7 +20,7 @@ export default function Footer() {
                 Email
               </a>
               <a
-                href="https://www.linkedin.com/in/jigarsoni"
+                href="https://www.linkedin.com/in/jigar-soni/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[13px] text-muted transition-colors hover:text-ink"

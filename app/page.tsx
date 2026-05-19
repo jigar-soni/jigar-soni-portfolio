@@ -348,7 +348,7 @@ export default function Home() {
                 Email me
               </a>
               <a
-                href="https://www.linkedin.com/in/jigarsoni"
+                href="https://www.linkedin.com/in/jigar-soni/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-full border border-subtle bg-white px-6 py-3.5 text-center text-[13.5px] font-medium text-ink shadow-soft transition hover:border-muted/60"

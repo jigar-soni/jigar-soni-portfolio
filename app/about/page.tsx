@@ -87,7 +87,7 @@ export default function AboutPage() {
                     Email
                   </a>
                   <a
-                    href="https://www.linkedin.com/in/jigarsoni"
+                    href="https://www.linkedin.com/in/jigar-soni/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="rounded-full border border-subtle px-4 py-2 text-[12.5px] font-medium text-ink transition hover:border-muted/60"

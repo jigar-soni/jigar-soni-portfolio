@@ -105,7 +105,7 @@ export default function ResumePage() {
               Get in touch
             </a>
             <a
-              href="https://www.linkedin.com/in/jigarsoni"
+              href="https://www.linkedin.com/in/jigar-soni/"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full border border-subtle bg-white px-5 py-2.5 text-[13px] font-medium text-ink shadow-soft transition hover:border-muted/60"
