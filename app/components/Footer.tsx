@@ -38,6 +38,7 @@ export default function Footer() {
               <Link href="/notes" className="text-[13px] text-muted transition-colors hover:text-ink">Notes</Link>
               <Link href="/favorites" className="text-[13px] text-muted transition-colors hover:text-ink">Finds</Link>
               <Link href="/about" className="text-[13px] text-muted transition-colors hover:text-ink">About</Link>
+              <Link href="/now" className="text-[13px] text-muted transition-colors hover:text-ink">Now</Link>
             </div>
           </nav>
         </div>
