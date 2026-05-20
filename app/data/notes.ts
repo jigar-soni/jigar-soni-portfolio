@@ -9,6 +9,22 @@ export type Note = {
 
 export const notes: Note[] = [
   {
+    slug: 'accessibility-for-humans-clarity-for-machines',
+    title: 'Accessibility for humans. Clarity for machines.',
+    date: '2026-05-20',
+    category: 'Growth',
+    excerpt:
+      "Accessibility is usually framed as a compliance requirement. That framing undersells it. A site built for accessibility is also a site that ad platform algorithms can read clearly — and that changes your conversion efficiency without touching a single campaign setting.",
+    body: [
+      "In 2021 I completed a web design certification, mostly out of curiosity about how websites are built. The part that stayed with me was not the HTML or the CSS — it was accessibility.",
+      "Accessibility is usually framed as a compliance requirement or a consideration for users with specific needs. That framing undersells it. A site built for accessibility — proper heading structure, descriptive alt text, semantic HTML, logical reading order — is a site that machines can parse clearly.",
+      "And the machines reading your site are not just screen readers. They are Google's crawlers. Meta's pixel. The algorithms that decide how to target your ads and who to show your products to.",
+      "When your site gives these systems clean, structured, interpretable signals, they work better. Better signals means better targeting means more efficient conversions — without touching a single campaign setting.",
+      "Most performance marketers never look at this because it sits outside the ad account. But the ad account is reading from your site. If what it is reading is noisy or ambiguous, you are starting every campaign at a disadvantage you cannot optimise your way out of.",
+      "Accessibility for humans. Clarity for machines. Same work, two payoffs.",
+    ],
+  },
+  {
     slug: 'platform-is-a-variable',
     title: 'The platform is a variable, not a constant',
     date: '2026-05-20',
