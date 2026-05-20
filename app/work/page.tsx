@@ -28,6 +28,25 @@ const caseStudies: CaseStudy[] = [
     caseStudyLink: '/work/inventory-intelligence',
   },
   {
+    id: 'premium-apparel',
+    tag: "Premium Women's Apparel · Google Ads · Full-Funnel",
+    category: 'Paid Acquisition & Scaling',
+    context: 'Agency · Client work',
+    activeClient: true,
+    title: 'The account showed 10x ROAS. I broke it. Then I built it back.',
+    summary:
+      "Inherited a Google Ads account reporting 8–10x ROAS. Found a double-counting error in conversion tracking — every number in the account was inflated. Fixed the tracking, watched the numbers drop, then rebuilt with a full-funnel structure. Year 2 delivered 71% revenue growth on 40% more spend.",
+    details: [
+      'Identified and fixed conversion double-counting — first accurate ROAS reading was 3.32x',
+      'Google Ads revenue grew 71% year-on-year (₹69.5L → ₹1.19Cr)',
+      'Spend grew only 40% — efficiency improved as the account scaled',
+      'Average ROAS improved from ~3.8x (Y1) to 4.67x (Y2) on accurate tracking',
+      '60-day CLV of ₹13,464 against CAC of ₹3,408 — payback period under 60 days',
+    ],
+    note: 'Conversion Lab · Sep 2023 – Present',
+    caseStudyLink: '/work/premium-apparel-google-ads',
+  },
+  {
     id: 'fmcg-revenue',
     tag: 'D2C FMCG · Revenue Growth · Meta & Google Ads',
     category: 'Paid Acquisition & Scaling',
