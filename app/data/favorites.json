@@ -4,24 +4,14 @@
       "name": "Websites",
       "items": [
         {
-          "title": "Linear",
-          "url": "https://linear.app",
-          "note": "The most beautiful product management tool on the internet. A masterclass in how software should feel."
-        },
-        {
-          "title": "Are.na",
-          "url": "https://www.are.na",
-          "note": "A quiet corner of the internet for collecting ideas without the noise of social media."
-        },
-        {
-          "title": "Sidebar.io",
-          "url": "https://sidebar.io",
-          "note": "Five design links every day. I have not missed a day in years."
-        },
-        {
           "title": "Marketing Examples",
           "url": "https://marketingexamples.com/",
           "note": "Real-world marketing breakdowns with actual numbers and screenshots. One of the best resources for anyone doing growth work."
+        },
+        {
+          "title": "neal.fun",
+          "url": "https://neal.fun",
+          "note": "A collection of small, delightful web experiments. The kind of site that reminds you the internet can still be genuinely fun."
         }
       ]
     },
@@ -39,9 +29,9 @@
           "note": "Business strategy made genuinely fun. The best thing I have read each week, most weeks."
         },
         {
-          "title": "The Generalist",
-          "url": "https://www.readthegeneralist.com",
-          "note": "Long-form breakdowns of the most interesting companies. The kind of writing that makes you think differently."
+          "title": "Life is a Picture, But You Live in a Pixel",
+          "url": "https://waitbutwhy.com/2013/11/life-is-picture-but-you-live-in-pixel.html",
+          "note": "One of the best things Tim Urban has written. The idea that life looks one way from the outside and entirely different from the inside. Hard to forget once you have read it."
         }
       ]
     },
@@ -49,24 +39,14 @@
       "name": "YouTube Channels",
       "items": [
         {
-          "title": "Alex Hormozi",
-          "url": "https://www.youtube.com/@AlexHormozi",
-          "note": "The most practical business content on YouTube. No fluff, just frameworks that actually work."
+          "title": "Dirt by Huckberry",
+          "url": "https://www.youtube.com/@Huckberry",
+          "note": "Short documentary series about people who make things and live differently. Beautifully shot. The kind of content that makes you want to do something with your hands."
         },
         {
-          "title": "Kurzgesagt",
-          "url": "https://www.youtube.com/@kurzgesagt",
-          "note": "Science and big ideas explained beautifully. I come here when I want my brain to feel small in a good way."
-        }
-      ]
-    },
-    {
-      "name": "Podcasts",
-      "items": [
-        {
-          "title": "Marketing Operators",
-          "url": "https://www.marketingoperators.co",
-          "note": "The most honest podcast about how D2C brands actually run their marketing. No fluff, no vanity metrics — just operators talking about what works. I have logged 3,000+ minutes and still go back to old episodes."
+          "title": "Andy Math",
+          "url": "https://www.youtube.com/@AndyMath",
+          "note": "Visual math explanations that are genuinely satisfying to watch. Makes you wish you had paid more attention in school."
         }
       ]
     },
@@ -77,26 +57,36 @@
           "title": "John Mayer — Interviews Compilation",
           "url": "https://www.youtube.com/watch?v=A2wsTv3zVD0",
           "note": "A cut of John Mayer interviews stitched into one. He talks about craft, creativity, and what it means to care deeply about what you do. I keep coming back to this when I need to reset."
+        },
+        {
+          "title": "How is this Website so fast!?",
+          "url": "https://www.youtube.com/watch?v=-Ln-8QM8KhQ",
+          "note": "Short video on what actually makes a website fast. Satisfying if you care about how the web works under the hood."
+        },
+        {
+          "title": "Tim Urban — Wait But Why",
+          "url": "https://www.youtube.com/watch?v=7a9lsGtVziM",
+          "note": "Tim Urban thinking out loud about big ideas. The same voice that makes Wait But Why worth reading."
         }
       ]
     },
     {
-      "name": "Tools I Use",
+      "name": "Podcasts",
       "items": [
         {
-          "title": "Notion",
-          "url": "https://notion.so",
-          "note": "My second brain. Everything I know, plan, and track lives here."
+          "title": "Marketing Operators",
+          "url": "https://www.marketingoperators.co",
+          "note": "The most honest podcast about how D2C brands actually run their marketing. No fluff, no vanity metrics — just operators talking about what works. I have logged 3,000+ minutes and still go back to old episodes."
         },
         {
-          "title": "Loom",
-          "url": "https://www.loom.com",
-          "note": "The fastest way to replace a long email with a short video. Changed how I communicate with clients."
+          "title": "Operators",
+          "url": "https://www.operators.fm",
+          "note": "Operators talking plainly about how DTC brands actually work. Less theory, more reality."
         },
         {
-          "title": "Perplexity",
-          "url": "https://www.perplexity.ai",
-          "note": "Search, but actually useful. My first stop for research now."
+          "title": "Marketing O'clock",
+          "url": "https://www.marketingoclock.com",
+          "note": "Weekly roundup of what is happening across paid search and social. Good for staying current without falling into a rabbit hole."
         }
       ]
     }
