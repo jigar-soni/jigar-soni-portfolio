@@ -37,7 +37,6 @@ const interests = [
 const keyNumbers = [
   { value: '₹70L+', label: 'Monthly ad spend managed' },
   { value: '7.6x', label: 'ROAS achieved on Google Ads' },
-  { value: '60%', label: 'CPL reduction at Beforest' },
   { value: '8+', label: 'Years in digital marketing' },
 ]
 
