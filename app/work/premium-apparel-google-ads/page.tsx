@@ -60,7 +60,7 @@ export default function PremiumApparelCaseStudy() {
           <div className="mt-6 flex flex-wrap gap-6">
             <div>
               <p className="text-[11px] uppercase tracking-label text-muted">Period</p>
-              <p className="mt-1.5 text-[14px] font-medium text-ink">Sep 2023 – Aug 2025</p>
+              <p className="mt-1.5 text-[14px] font-medium text-ink">Sep 2023 – Jan 2026</p>
             </div>
             <div>
               <p className="text-[11px] uppercase tracking-label text-muted">Channel</p>
