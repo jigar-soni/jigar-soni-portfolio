@@ -39,11 +39,6 @@
       "name": "YouTube Channels",
       "items": [
         {
-          "title": "Dirt by Huckberry",
-          "url": "https://youtube.com/playlist?list=PLjHRKTS-Q5-CeCo66kFGivBMF8qB8orPh",
-          "note": "Short documentary series about people who make things and live differently. Beautifully shot. The kind of content that makes you want to do something with your hands."
-        },
-        {
           "title": "Andy Math",
           "url": "https://www.youtube.com/@AndyMath",
           "note": "Visual math explanations that are genuinely satisfying to watch. Makes you wish you had paid more attention in school."
@@ -59,14 +54,19 @@
           "note": "A cut of John Mayer interviews stitched into one. He talks about craft, creativity, and what it means to care deeply about what you do. I keep coming back to this when I need to reset."
         },
         {
+          "title": "Dirt by Huckberry",
+          "url": "https://youtube.com/playlist?list=PLjHRKTS-Q5-CeCo66kFGivBMF8qB8orPh",
+          "note": "Short documentary series about people who make things and live differently. Beautifully shot. The kind of content that makes you want to do something with your hands."
+        },
+        {
           "title": "How is this Website so fast!?",
           "url": "https://www.youtube.com/watch?v=-Ln-8QM8KhQ",
           "note": "Short video on what actually makes a website fast. Satisfying if you care about how the web works under the hood."
         },
         {
-          "title": "Tim Urban — Wait But Why",
+          "title": "Tim Urban of Wait But Why — Y Combinator",
           "url": "https://www.youtube.com/watch?v=7a9lsGtVziM",
-          "note": "Tim Urban thinking out loud about big ideas. The same voice that makes Wait But Why worth reading."
+          "note": "Tim Urban talking about how he researches and writes about the hardest topics — AI, Fermi Paradox, Elon Musk — without being an expert in any of them. The idea that curiosity and wide reading can get you further than narrow expertise. I found this reassuring in a way I did not expect."
         }
       ]
     },
