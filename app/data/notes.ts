@@ -9,6 +9,22 @@ export type Note = {
 
 export const notes: Note[] = [
   {
+    slug: 'platform-is-a-variable',
+    title: 'The platform is a variable, not a constant',
+    date: '2026-05-20',
+    category: 'Thinking',
+    excerpt:
+      "You can do everything right and still get burned. The ad platform itself is part of the outcome — and the sooner you account for it as a variable, the less you'll confuse its problems for your own.",
+    body: [
+      "There's something a potter does after finishing a piece — a few extra taps, small adjustments, a final pass before it goes into the kiln. The craft is fully in their hands. What they put in, they get out.",
+      "Performance marketing doesn't always work that way.",
+      "I've had accounts where everything within my control was solid — conversion tracking clean, campaign structure right, creative performing, budgets allocated sensibly. And then a platform bug would quietly break attribution for a few days, or an algorithm update would destabilise something that had been running well for months, or a known issue would sit open on a support thread with no resolution timeline.",
+      "The effort was real. The outcome was not fully mine to control.",
+      "The thing I keep coming back to: the ad platform itself is a variable. Not a fixed, reliable medium you're operating through, but an active participant in the outcome — with its own updates, quirks, attribution gaps, and decisions you are not privy to. Some of this is predictable. Most of it is not.",
+      "This changes how you hold your results. A month of underperformance is not always a campaign problem. A strong ROAS number is not always something you fully earned. The platform is part of the story — and the sooner you account for it as a variable rather than a given, the less you'll confuse the platform's problems for your own.",
+    ],
+  },
+  {
     slug: 'tools-evolve-principles-dont',
     title: 'Tools evolve. Principles are timeless.',
     date: '2026-05-19',
