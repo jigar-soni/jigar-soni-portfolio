@@ -29,7 +29,7 @@ export default function NowPage() {
           <div>
             <p className="text-[11.5px] uppercase tracking-label text-muted">Work</p>
             <p className="mt-5 text-[16px] leading-loose text-ink/80">
-              Heads-down at Conversion Lab, managing paid media across a portfolio of D2C brands. The focus right now is scaling what is working — tightening structures, improving efficiency, and finding the next lever on accounts that are already performing.
+              At Conversion Lab, managing paid media across a handful of D2C brands. A couple of accounts are in a good place right now — the work is less about fixing and more about pushing. Figuring out how far you can scale without breaking what is already working is a more interesting problem than it sounds.
             </p>
           </div>
 
