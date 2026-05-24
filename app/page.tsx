@@ -66,7 +66,7 @@ export default function Home() {
                 custom={1}
                 className="mt-5 font-display italic text-[2.8rem] font-normal leading-[1.1] tracking-tight text-ink sm:text-[3.4rem]"
               >
-                8 years in D2C paid media. I run Meta Ads, Google Ads, and growth strategy for apparel, skincare, and lifestyle brands.
+                8 years in paid media. Meta Ads, Google Ads, and growth strategy for D2C apparel, skincare, and lifestyle brands.
               </motion.h1>
               <motion.p
                 variants={fade}
@@ -143,7 +143,7 @@ export default function Home() {
             <div>
               <p className="text-[11.5px] uppercase tracking-label text-muted">About</p>
               <h2 className="mt-5 font-display italic text-[1.9rem] font-normal leading-snug tracking-tight text-ink">
-                8 years in D2C performance marketing.
+                8 years in paid media.
               </h2>
               <p className="mt-5 text-[15px] leading-loose text-muted">
                 I'm from Gujarat and have spent my career working in paid media for D2C brands across apparel, skincare, wellness and lifestyle. It started at an agency, moved through freelance, and now I manage a portfolio of brands at scale.
