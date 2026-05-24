@@ -9,6 +9,25 @@ export type Note = {
 
 export const notes: Note[] = [
   {
+    slug: 'appeasing-the-algorithm',
+    title: 'Appeasing the algorithm',
+    date: '2026-05-24',
+    category: 'Thinking',
+    excerpt:
+      'Algorithm hacking implies an adversarial relationship with the platform — find the exploit, extract more reach than you earned. I never thought that framing was right. Platforms are businesses. Understanding what they actually want is a more durable strategy than trying to trick them.',
+    body: [
+      '"Algorithm hacking" was a term that circulated heavily in social media marketing for years. The premise was adversarial: find the exploit, trick the system, extract more reach than you earned.',
+      "I never liked that framing. Not for ethical reasons — just because it misidentified what was actually happening.",
+      'What I started calling it instead was "appeasing the algorithm." The distinction matters.',
+      "A platform is a business. Its algorithm exists to keep users on the app — engaged, entertained, coming back — so the platform can sell ads against that attention. Any content that achieves this gets rewarded. Not because you gamed anything, but because you gave the platform what it needs to function.",
+      "Once you accept this, a few things follow naturally.",
+      "New features are worth adopting early. When a platform launches something new, it has an internal interest in that feature succeeding. Early adopters who generate positive signals help justify the build. The platform is, quietly, rooting for them. Being early isn't an exploit — it's alignment.",
+      "Screen time matters, even though you can't directly measure it. A looping reel someone watches twice, a carousel they scroll back through, a comments section they stay in — these all tell the algorithm the content was worth the time. Replying to every comment isn't just good community practice; it keeps your audience in the thread, which keeps the content alive longer.",
+      "There is also a category of engagement that never shows up in dashboards — polls, AMAs, quiz cards, mentions. No measurable metric, but real interaction that the platform registers. Creating for this kind of engagement, not just for tracked numbers, is part of what appeasing actually means in practice.",
+      "The shift from hacking to appeasing sounds small. But one strategy is about finding gaps before they close. The other is about understanding what you are actually working with — and building accordingly.",
+    ],
+  },
+  {
     slug: 'north-star-metric-lean-d2c-brands',
     title: 'The north star metric for lean D2C brands',
     date: '2026-05-24',
