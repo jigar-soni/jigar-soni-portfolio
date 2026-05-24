@@ -9,6 +9,22 @@ export type Note = {
 
 export const notes: Note[] = [
   {
+    slug: 'north-star-metric-lean-d2c-brands',
+    title: 'The north star metric for lean D2C brands',
+    date: '2026-05-24',
+    category: 'Strategy',
+    excerpt:
+      'Sophisticated attribution models make sense for mature brands with the resources to run them. For a lean D2C brand, there is usually a better option — one number that cleanly connects ad spend to new customer growth.',
+    body: [
+      "There's a gap between how growth measurement is taught and how it actually gets used in smaller brands.",
+      "The sophisticated version — multi-touch attribution, incrementality testing, media mix modelling — makes sense for brands with the budget, team, and data volume to run it properly. For a lean D2C brand doing seven figures, that apparatus is mostly overhead.",
+      "What I've found more useful in practice is aMER: New Customer Revenue divided by Ad Spend. One number that connects what you're spending to what you're actually growing.",
+      "It does something ROAS doesn't: it filters out revenue from returning customers and focuses purely on what paid media is generating in terms of new buyers. For brands where most of the budget is going toward acquisition, that distinction matters. A high blended ROAS can hide a weak new customer pipeline — and a weak pipeline is a growth problem you'll feel in six months.",
+      "The other reason aMER works for this context is that it's usable. You can set a target aMER that maps to your margins, your inventory cycle, and your cash position. When you're above it, you push spend. When you drop below, you pull back and recalibrate. The decision tree is simple enough that it doesn't require a data team to interpret.",
+      "Larger brands need more sophisticated measurement. For a lean team managing growth at scale, the right metric isn't necessarily the most precise one — it's the one you can act on consistently.",
+    ],
+  },
+  {
     slug: 'accessibility-for-humans-clarity-for-machines',
     title: 'Accessibility for humans. Clarity for machines.',
     date: '2026-05-20',
