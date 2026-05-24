@@ -73,7 +73,7 @@ export const notes: Note[] = [
   {
     slug: 'why-d2c-brands-plateau',
     title: 'Why most D2C brands plateau at a certain scale',
-    date: '2024-11-20',
+    date: '2025-11-05',
     category: 'Growth',
     excerpt:
       "After working with multiple D2C brands, I've noticed a consistent pattern in where growth stalls — and it's rarely the ads.",
@@ -88,7 +88,7 @@ export const notes: Note[] = [
   {
     slug: 'creative-fatigue',
     title: 'Creative fatigue is real. Most brands catch it too late.',
-    date: '2024-10-15',
+    date: '2025-08-22',
     category: 'Paid Media',
     excerpt:
       "The biggest waste in Meta Ads isn't bad targeting. It's running the same creatives past their prime.",
@@ -103,7 +103,7 @@ export const notes: Note[] = [
   {
     slug: 'contribution-margin',
     title: 'The metric most growth teams undervalue',
-    date: '2024-09-08',
+    date: '2025-06-18',
     category: 'Strategy',
     excerpt:
       "ROAS is a useful proxy but it isn't a profitability metric. The number that actually matters is contribution margin.",
@@ -118,7 +118,7 @@ export const notes: Note[] = [
   {
     slug: 'retention-before-acquisition',
     title: 'Build your retention engine before you need it',
-    date: '2024-08-12',
+    date: '2025-04-10',
     category: 'Strategy',
     excerpt:
       "Most brands think about retention when growth stalls. That's too late. The best time to build a retention system is when acquisition is working.",
@@ -133,7 +133,7 @@ export const notes: Note[] = [
   {
     slug: 'chess-and-marketing',
     title: 'What chess taught me about growth marketing',
-    date: '2024-07-03',
+    date: '2025-02-28',
     category: 'Thinking',
     excerpt:
       "Both reward patience, pattern recognition, and thinking several moves ahead. Both punish reactive, short-term play.",
@@ -148,7 +148,7 @@ export const notes: Note[] = [
   {
     slug: 'what-premium-brands-do-differently',
     title: 'What premium D2C brands do differently with ad creative',
-    date: '2024-06-18',
+    date: '2025-01-14',
     category: 'Paid Media',
     excerpt:
       "The brands that maintain strong margins at scale are almost always the ones that treat creative as a strategic function.",
