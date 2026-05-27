@@ -6,6 +6,7 @@ type Scenario = 'base' | 'stressed' | 'optimised'
 
 interface Inputs {
   aov: number
+  returnRate: number
   cogsPct: number
   shipping: number
   gatewayPct: number
@@ -17,15 +18,15 @@ interface Inputs {
 const SCENARIOS: Record<Scenario, Inputs & { label: string }> = {
   base: {
     label: 'Base case',
-    aov: 1300, cogsPct: 32, shipping: 120, gatewayPct: 2.0, cac: 800, ordersPerYear: 1.4, lifespan: 2.0,
+    aov: 1300, returnRate: 0, cogsPct: 32, shipping: 120, gatewayPct: 2.0, cac: 800, ordersPerYear: 1.4, lifespan: 2.0,
   },
   stressed: {
     label: 'Stressed (CAC spike)',
-    aov: 1300, cogsPct: 32, shipping: 150, gatewayPct: 2.0, cac: 1600, ordersPerYear: 1.2, lifespan: 1.5,
+    aov: 1300, returnRate: 15, cogsPct: 32, shipping: 150, gatewayPct: 2.0, cac: 1600, ordersPerYear: 1.2, lifespan: 1.5,
   },
   optimised: {
     label: 'Optimised (retention win)',
-    aov: 1600, cogsPct: 28, shipping: 100, gatewayPct: 2.0, cac: 700, ordersPerYear: 2.4, lifespan: 3.0,
+    aov: 1600, returnRate: 2, cogsPct: 28, shipping: 100, gatewayPct: 2.0, cac: 700, ordersPerYear: 2.4, lifespan: 3.0,
   },
 }
 
@@ -87,6 +88,7 @@ function MetricCard({ label, value, sub, status = 'neutral' }: {
 export default function Calculator() {
   const [scenario, setScenario] = useState<Scenario>('base')
   const [aov, setAov] = useState(1300)
+  const [returnRate, setReturnRate] = useState(0)
   const [cogsPct, setCogsPct] = useState(32)
   const [shipping, setShipping] = useState(120)
   const [gatewayPct, setGatewayPct] = useState(2.0)
@@ -96,16 +98,18 @@ export default function Calculator() {
 
   const applyScenario = (s: Scenario) => {
     const p = SCENARIOS[s]
-    setAov(p.aov); setCogsPct(p.cogsPct); setShipping(p.shipping)
-    setGatewayPct(p.gatewayPct); setCac(p.cac)
+    setAov(p.aov); setReturnRate(p.returnRate); setCogsPct(p.cogsPct)
+    setShipping(p.shipping); setGatewayPct(p.gatewayPct); setCac(p.cac)
     setOrdersPerYear(p.ordersPerYear); setLifespan(p.lifespan)
     setScenario(s)
   }
 
   // Calculations
-  const cogsAmt = aov * (cogsPct / 100)
-  const paymentFees = aov * (gatewayPct / 100)
-  const cm = aov - cogsAmt - shipping - paymentFees
+  const returnsAmt = aov * (returnRate / 100)
+  const netAov = aov - returnsAmt
+  const cogsAmt = netAov * (cogsPct / 100)
+  const paymentFees = netAov * (gatewayPct / 100)
+  const cm = netAov - cogsAmt - shipping - paymentFees
   const ltv = Math.max(0, cm * ordersPerYear * lifespan)
   const ltvCac = cac > 0 ? ltv / cac : 0
   const paybackMonths = cm > 0 ? (cac * 12) / (cm * ordersPerYear) : Infinity
@@ -130,7 +134,7 @@ export default function Calculator() {
     if (cm <= 0) return {
       status: 'danger',
       title: 'Negative contribution margin',
-      message: 'Each order is losing money before factoring in CAC. Fix pricing, COGS, or fulfilment costs before running any paid acquisition.',
+      message: 'Each order is losing money before factoring in CAC. Fix pricing, COGS, returns, or fulfilment costs before running any paid acquisition.',
     }
     if (ltvCac >= 3 && paybackMonths <= 6) return {
       status: 'healthy',
@@ -150,7 +154,7 @@ export default function Calculator() {
     return {
       status: 'danger',
       title: 'Danger — stop scaling paid',
-      message: `LTV:CAC of ${ltvCac.toFixed(1)}× means you are destroying value with each new customer acquired. Pause paid acquisition and fix the fundamentals — pricing, retention, or CAC efficiency — before spending more.`,
+      message: `LTV:CAC of ${ltvCac.toFixed(1)}× means you are destroying value with each new customer acquired. Pause paid acquisition and fix the fundamentals — pricing, retention, returns, or CAC efficiency — before spending more.`,
     }
   }
 
@@ -158,26 +162,28 @@ export default function Calculator() {
 
   const verdictStyle: Record<VerdictStatus, { wrap: string; title: string; msg: string }> = {
     healthy: { wrap: 'border-emerald-200 bg-emerald-50', title: 'text-emerald-800', msg: 'text-emerald-700' },
-    decent:  { wrap: 'border-amber-200 bg-amber-50',   title: 'text-amber-800',   msg: 'text-amber-700'   },
-    marginal:{ wrap: 'border-amber-200 bg-amber-50',   title: 'text-amber-800',   msg: 'text-amber-700'   },
-    danger:  { wrap: 'border-red-200 bg-red-50',       title: 'text-red-800',     msg: 'text-red-700'     },
+    decent:  { wrap: 'border-amber-200 bg-amber-50',    title: 'text-amber-800',   msg: 'text-amber-700'   },
+    marginal:{ wrap: 'border-amber-200 bg-amber-50',    title: 'text-amber-800',   msg: 'text-amber-700'   },
+    danger:  { wrap: 'border-red-200 bg-red-50',        title: 'text-red-800',     msg: 'text-red-700'     },
   }
   const vs = verdictStyle[verdict.status]
 
-  // Bar chart (relative to AOV)
+  // Bar chart — reference width is gross AOV
   const barPct = (val: number) =>
     `${Math.max(3, (Math.max(0, val) / aov) * 100)}%`
 
   const economicsBars = [
-    { label: 'Revenue (AOV)',        value: aov,         amount: aov,          color: 'bg-emerald-400' },
-    { label: '− COGS',              value: cogsAmt,     amount: -cogsAmt,     color: 'bg-rose-300'    },
-    { label: '− Shipping & fulfil.',value: shipping,    amount: -shipping,    color: 'bg-amber-300'   },
-    { label: '− Payment fees',      value: paymentFees, amount: -paymentFees, color: 'bg-orange-200'  },
-    { label: '= Contribution margin',value: Math.abs(cm), amount: cm,         color: cm >= 0 ? 'bg-emerald-400' : 'bg-red-400' },
+    { label: 'Revenue (AOV)',          value: aov,         amount: aov,          color: 'bg-emerald-400' },
+    ...(returnRate > 0 ? [{ label: '− Returns', value: returnsAmt, amount: -returnsAmt, color: 'bg-purple-200' }] : []),
+    { label: '− COGS',                 value: cogsAmt,     amount: -cogsAmt,     color: 'bg-rose-300'    },
+    { label: '− Shipping & fulfil.',   value: shipping,    amount: -shipping,    color: 'bg-amber-300'   },
+    { label: '− Payment fees',         value: paymentFees, amount: -paymentFees, color: 'bg-orange-200'  },
+    { label: '= Contribution margin',  value: Math.abs(cm),amount: cm,           color: cm >= 0 ? 'bg-emerald-400' : 'bg-red-400' },
   ]
 
   const formulas = [
-    { label: 'Contribution margin per order', expr: 'AOV − COGS − Shipping − Payment fees' },
+    { label: 'Net revenue',                   expr: 'AOV × (1 − Return rate)' },
+    { label: 'Contribution margin per order', expr: 'Net revenue − COGS − Shipping − Payment fees' },
     { label: 'LTV',                           expr: 'CM per order × Orders / yr × Customer lifespan' },
     { label: 'LTV:CAC ratio',                 expr: 'LTV ÷ CAC · target > 3×' },
     { label: 'Payback period',                expr: '(CAC × 12) ÷ (CM per order × Orders / yr) · target < 6 months' },
@@ -214,13 +220,14 @@ export default function Calculator() {
         <div className="rounded-[20px] border border-subtle bg-white p-6 shadow-soft">
           <p className="text-[11px] uppercase tracking-label text-muted">Inputs — drag to explore</p>
           <div className="mt-4 divide-y divide-subtle/50">
-            <SliderRow label="AOV (avg order value)"   value={aov}          min={300}  max={5000} step={50}  onChange={setAov}          display={`₹${fmt(aov)}`} />
-            <SliderRow label="COGS % of AOV"           value={cogsPct}      min={10}   max={70}   step={1}   onChange={setCogsPct}      display={`${cogsPct}%`} />
-            <SliderRow label="Shipping & fulfil. cost" value={shipping}     min={30}   max={500}  step={10}  onChange={setShipping}     display={`₹${fmt(shipping)}`} />
-            <SliderRow label="Payment gateway %"       value={gatewayPct}   min={1.0}  max={4.0}  step={0.1} onChange={setGatewayPct}  display={`${gatewayPct.toFixed(1)}%`} />
-            <SliderRow label="CAC (cost to acquire)"   value={cac}          min={200}  max={3000} step={50}  onChange={setCac}          display={`₹${fmt(cac)}`} />
-            <SliderRow label="Orders per year"         value={ordersPerYear} min={1.0} max={6.0}  step={0.1} onChange={setOrdersPerYear} display={`${ordersPerYear.toFixed(1)}×`} />
-            <SliderRow label="Customer lifespan (yrs)" value={lifespan}     min={0.5}  max={5.0}  step={0.1} onChange={setLifespan}     display={`${lifespan.toFixed(1)} yrs`} />
+            <SliderRow label="AOV (avg order value)"   value={aov}          min={300}  max={20000} step={100} onChange={setAov}          display={`₹${fmt(aov)}`} />
+            <SliderRow label="Return rate %"           value={returnRate}   min={0}    max={40}    step={0.5} onChange={setReturnRate}   display={`${returnRate.toFixed(1)}%`} />
+            <SliderRow label="COGS % of AOV"           value={cogsPct}      min={10}   max={70}    step={1}   onChange={setCogsPct}      display={`${cogsPct}%`} />
+            <SliderRow label="Shipping & fulfil. cost" value={shipping}     min={30}   max={500}   step={10}  onChange={setShipping}     display={`₹${fmt(shipping)}`} />
+            <SliderRow label="Payment gateway %"       value={gatewayPct}   min={1.0}  max={4.0}   step={0.1} onChange={setGatewayPct}  display={`${gatewayPct.toFixed(1)}%`} />
+            <SliderRow label="CAC (cost to acquire)"   value={cac}          min={200}  max={3000}  step={50}  onChange={setCac}          display={`₹${fmt(cac)}`} />
+            <SliderRow label="Orders per year"         value={ordersPerYear} min={1.0} max={6.0}   step={0.1} onChange={setOrdersPerYear} display={`${ordersPerYear.toFixed(1)}×`} />
+            <SliderRow label="Customer lifespan (yrs)" value={lifespan}     min={0.5}  max={5.0}   step={0.1} onChange={setLifespan}     display={`${lifespan.toFixed(1)} yrs`} />
           </div>
         </div>
 
@@ -252,12 +259,12 @@ export default function Calculator() {
           <div className="rounded-[20px] border border-subtle bg-white p-6 shadow-soft">
             <p className="text-[11px] uppercase tracking-label text-muted">Key metrics</p>
             <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
-              <MetricCard label="LTV"            value={`₹${fmt(ltv)}`}                                          sub="lifetime value"       status="neutral" />
-              <MetricCard label="LTV:CAC"        value={`${ltvCac.toFixed(1)}×`}                                 sub="target > 3×"          status={ltvCacStatus()} />
-              <MetricCard label="Payback"        value={paybackMonths === Infinity ? '—' : `${paybackMonths.toFixed(1)} mo`} sub="target < 6 mo" status={paybackStatus()} />
-              <MetricCard label="CM / order"     value={`₹${fmt(cm)}`}                                           sub={`${cmPctAov.toFixed(1)}% of AOV`} status={cm > 0 ? 'neutral' : 'danger'} />
-              <MetricCard label="Blended margin" value={`${blendedMargin.toFixed(0)}%`}                          sub="(LTV−CAC)÷LTV"        status="neutral" />
-              <MetricCard label="CAC"            value={`₹${fmt(cac)}`}                                          sub="cost to acquire"      status="neutral" />
+              <MetricCard label="LTV"            value={`₹${fmt(ltv)}`}                                                    sub="lifetime value"         status="neutral" />
+              <MetricCard label="LTV:CAC"        value={`${ltvCac.toFixed(1)}×`}                                           sub="target > 3×"            status={ltvCacStatus()} />
+              <MetricCard label="Payback"        value={paybackMonths === Infinity ? '—' : `${paybackMonths.toFixed(1)} mo`} sub="target < 6 mo"         status={paybackStatus()} />
+              <MetricCard label="CM / order"     value={`₹${fmt(cm)}`}                                                     sub={`${cmPctAov.toFixed(1)}% of AOV`} status={cm > 0 ? 'neutral' : 'danger'} />
+              <MetricCard label="Blended margin" value={`${blendedMargin.toFixed(0)}%`}                                    sub="(LTV−CAC)÷LTV"          status="neutral" />
+              <MetricCard label="CAC"            value={`₹${fmt(cac)}`}                                                    sub="cost to acquire"        status="neutral" />
             </div>
           </div>
         </div>
