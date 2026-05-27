@@ -9,7 +9,6 @@ const links = [
   { href: '/resume', label: 'Resume' },
   { href: '/notes', label: 'Notes' },
   { href: '/favorites', label: 'Finds' },
-  { href: '/d2c-unit-economics-calculator', label: 'Tools' },
   { href: '/about', label: 'About' },
 ]
 

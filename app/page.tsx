@@ -327,6 +327,29 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Calculator tool */}
+      <section className="border-t border-subtle px-5 py-20 sm:px-8">
+        <div className="mx-auto max-w-6xl">
+          <div className="flex flex-col gap-8 sm:flex-row sm:items-center sm:justify-between">
+            <div className="max-w-lg">
+              <p className="text-[11.5px] uppercase tracking-label text-muted">Tools</p>
+              <h2 className="mt-4 font-display italic text-[1.9rem] font-normal tracking-tight text-ink">
+                D2C Unit Economics Calculator
+              </h2>
+              <p className="mt-4 text-[15px] leading-loose text-muted">
+                Model your LTV:CAC ratio, contribution margin, and payback period. Drag the inputs to stress-test your unit economics before scaling paid acquisition.
+              </p>
+            </div>
+            <Link
+              href="/d2c-unit-economics-calculator"
+              className="self-start shrink-0 rounded-full border border-subtle bg-white px-6 py-3 text-[13.5px] font-medium text-ink shadow-soft transition hover:border-muted/60 sm:self-auto"
+            >
+              Open calculator →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Contact */}
       <section className="border-t border-subtle px-5 py-20 sm:px-8">
         <div className="mx-auto max-w-6xl">
