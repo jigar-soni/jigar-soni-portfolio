@@ -29,6 +29,7 @@ export const metadata: Metadata = {
   },
   description:
     'Performance marketer specializing in D2C brand growth. Managing Meta Ads, Google Ads, and growth strategy for apparel, skincare, and lifestyle brands.',
+  metadataBase: new URL('https://www.jigarsoni.com'),
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
