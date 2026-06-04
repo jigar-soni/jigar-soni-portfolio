@@ -140,12 +140,12 @@ export default function WorkPage() {
       <section className="border-t border-subtle px-5 py-16 sm:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="rounded-[28px] border border-subtle bg-white p-10 text-center shadow-soft sm:p-14">
-            <p className="text-[11.5px] uppercase tracking-label text-muted">Next step</p>
+            <p className="text-[11.5px] uppercase tracking-label text-muted">Get in touch</p>
             <h2 className="mt-4 font-display italic text-[1.8rem] font-normal tracking-tight text-ink">
-              Looking for a performance marketer?
+              If there's a conversation worth having.
             </h2>
             <p className="mx-auto mt-4 max-w-md text-[15px] leading-loose text-muted">
-              If you're leading a D2C brand and need someone with hands-on paid media experience and a strategic head on their shoulders, I'd like to hear about the role.
+              If you're building something in D2C and think there's something worth talking about — a project, a collab, or just an interesting problem — reach out.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
               <a

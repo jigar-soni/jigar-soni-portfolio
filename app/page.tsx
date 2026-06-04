@@ -357,10 +357,10 @@ export default function Home() {
             <div>
               <p className="text-[11.5px] uppercase tracking-label text-muted">Contact</p>
               <h2 className="mt-4 font-display italic text-[2.4rem] font-normal tracking-tight text-ink sm:text-[2.8rem]">
-                Open to the right role.
+                If there's a conversation worth having.
               </h2>
               <p className="mt-5 max-w-md text-[15px] leading-loose text-muted">
-                If you're looking for a performance marketer with hands-on D2C experience and the business thinking to match, I'd like to hear about the opportunity.
+                If you're building something in D2C or e-commerce and think there's something worth talking about, reach out.
               </p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row lg:justify-end">

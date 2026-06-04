@@ -44,7 +44,7 @@ const currently = [
   { label: 'Reading', value: 'Click Here' },
   { label: 'Thinking about', value: 'How D2C brands build real pricing power' },
   { label: 'Fitness', value: 'Getting consistent at the gym. More cardio than I would like.' },
-  { label: 'Looking for', value: 'Head of Growth or similar role at a D2C brand' },
+  { label: 'Direction', value: 'Head of Growth — where growth is the whole job, not one channel' },
 ]
 
 export default function AboutPage() {
@@ -70,7 +70,7 @@ export default function AboutPage() {
                   I care about the business behind the campaigns. There's a meaningful difference between a marketer who manages ad accounts and one who understands why a brand grows or plateaus — I've tried to be the second kind.
                 </p>
                 <p>
-                  My next step is a Head of Growth type role, where the scope goes beyond a single channel and into strategy, retention, and cross-functional growth.
+                  The direction I'm building toward is Head of Growth — where the scope goes beyond a single channel and into strategy, retention, and how a brand actually compounds over time.
                 </p>
               </div>
             </div>
@@ -172,13 +172,13 @@ export default function AboutPage() {
           <div className="rounded-[28px] border border-subtle bg-white p-10 shadow-soft sm:p-14">
             <p className="text-[11.5px] uppercase tracking-label text-muted">Looking ahead</p>
             <h2 className="mt-4 max-w-lg font-display italic text-[1.6rem] font-normal tracking-tight text-ink">
-              What I'm looking for.
+              Where I'm headed.
             </h2>
             <p className="mt-5 max-w-xl text-[15px] leading-loose text-muted">
-              I want to move into a Head of Growth or senior growth role — where the job is to lead acquisition, retention, and strategy together, not just manage one channel.
+              The work I'm building toward is Head of Growth — where the scope extends beyond any single channel and into how brands actually grow: retention, product thinking, and the business model behind the campaigns.
             </p>
             <p className="mt-4 max-w-xl text-[15px] leading-loose text-muted">
-              The kind of company I want to work with takes growth seriously, has a product worth caring about, and is at a stage where the right hire makes a real difference. Preferably D2C or e-commerce, but I'm open to conversations.
+              D2C and e-commerce is where my thinking runs deepest — the mechanics of how brands grow, retain, and scale at different stages. That's what keeps me engaged.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
