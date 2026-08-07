@@ -11,7 +11,7 @@ export const notes: Note[] = [
   {
     slug: 'engagement-juice',
     title: 'Engagement Juice: the hidden value of organic social',
-    date: '2026-05-28',
+    date: '2026-08-07',
     category: 'Paid Media',
     excerpt:
       'Most Meta advertisers treat paid and organic as separate channels. They\'re not. An active, engaged social presence creates accumulated context that can influence paid performance — through familiarity, social proof, and trust. I\'m calling this effect "Engagement Juice."',
