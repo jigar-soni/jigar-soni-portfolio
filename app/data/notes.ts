@@ -9,6 +9,23 @@ export type Note = {
 
 export const notes: Note[] = [
   {
+    slug: 'engagement-juice',
+    title: 'Engagement Juice: the hidden value of organic social',
+    date: '2026-05-28',
+    category: 'Paid Media',
+    excerpt:
+      'Most Meta advertisers treat paid and organic as separate channels. They\'re not. An active, engaged social presence creates accumulated context that can influence paid performance — through familiarity, social proof, and trust. I\'m calling this effect "Engagement Juice."',
+    body: [
+      'Paid media doesn\'t operate in a vacuum. When someone sees your Meta ad, they can click through to your Instagram or Facebook profile. They see your posts, comments, shares, UGC, customer conversations, and how active the brand actually is. That context matters.',
+      'A brand with an active, engaged social presence feels different from a brand whose profile looks dead — even if both are running the exact same ad. The difference isn\'t just perception. It\'s measurable in several ways.',
+      'Social proof — comments, shares, and customer interactions reduce uncertainty. Someone considering a purchase is less likely to convert if your profile has zero engagement. Familiarity — people have already encountered the brand before the ad, which lowers resistance. Trust — an active community makes a brand feel more established and credible. Creative signals — organic engagement reveals which ideas resonate before you scale them with paid media. Audience value — organic interactions create additional touchpoints around the brand.',
+      'I\'m calling the accumulated effect "Engagement Juice." But I don\'t mean more likes equals better ads. A viral giveaway, bot engagement, or irrelevant followers don\'t create juice. I\'m thinking about consistent, authentic, relevant engagement that compounds over time.',
+      'The relationship flows both ways. Organic content drives engagement, which builds social proof and familiarity, which influences paid media efficiency. But paid media also works in reverse — it brings more people into the ecosystem, which creates more organic engagement, which builds more juice.',
+      'The mechanism is still a hypothesis. I\'m not claiming Meta secretly rewards brands with high organic engagement. But I am noticing that brands with active social ecosystems tend to see better paid performance than brands with identical spend and similar audiences. Whether that\'s correlation or causation — and how to measure it — is what I\'m working on now.',
+      'The question I\'m chasing: Does a growing Engagement Juice reservoir actually make paid acquisition more efficient? If the data supports it, this could change how D2C brands think about the organic-paid relationship.',
+    ],
+  },
+  {
     slug: 'north-star-metric-lean-d2c-brands',
     title: 'The north star metric for lean D2C brands',
     date: '2026-05-24',
