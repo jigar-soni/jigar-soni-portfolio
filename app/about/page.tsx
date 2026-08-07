@@ -7,6 +7,48 @@ export const metadata: Metadata = {
     'About Jigar Soni — performance marketer and D2C growth specialist from Gujarat, India.',
 }
 
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  name: 'D2C Growth & Performance Marketing',
+  provider: {
+    '@type': 'Person',
+    name: 'Jigar Soni',
+    url: 'https://jigarsoni.com',
+  },
+  areaServed: {
+    '@type': 'Country',
+    name: 'India',
+  },
+  hasOfferingType: [
+    {
+      '@type': 'Service',
+      name: 'Performance Marketing Consulting',
+      description: 'Meta Ads, Google Ads, and paid media strategy for D2C brands',
+    },
+    {
+      '@type': 'Service',
+      name: 'Account Restructuring & Optimization',
+      description: 'Audit, fix, and optimize existing paid media accounts for efficiency and ROAS',
+    },
+    {
+      '@type': 'Service',
+      name: 'Retention & Lifecycle Strategy',
+      description: 'Email marketing, customer retention, and LTV optimization frameworks',
+    },
+    {
+      '@type': 'Service',
+      name: 'Unit Economics Modeling',
+      description: 'LTV:CAC analysis, contribution margin optimization, and payback period strategy',
+    },
+    {
+      '@type': 'Service',
+      name: 'Growth Strategy Consultation',
+      description: 'Budget allocation, channel strategy, and multi-channel growth planning',
+    },
+  ],
+}
+
 const interests = [
   {
     name: 'Fitness',
@@ -50,6 +92,10 @@ const currently = [
 export default function AboutPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
       {/* Hero */}
       <section className="px-5 pb-14 pt-32 sm:px-8">
         <div className="mx-auto max-w-6xl">

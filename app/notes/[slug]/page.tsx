@@ -35,8 +35,39 @@ export default function NotePage({ params }: Props) {
   const prev = notes[currentIndex + 1]
   const next = notes[currentIndex - 1]
 
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: note.title,
+    description: note.excerpt,
+    image: 'https://jigarsoni.com/og-image.png',
+    datePublished: note.date,
+    dateModified: note.date,
+    author: {
+      '@type': 'Person',
+      name: 'Jigar Soni',
+      url: 'https://jigarsoni.com',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Jigar Soni',
+      url: 'https://jigarsoni.com',
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://jigarsoni.com/notes/${note.slug}`,
+    },
+    articleSection: note.category,
+    articleBody: note.body.join('\n\n'),
+    wordCount: note.body.join(' ').split(/\s+/).length,
+  }
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <section className="px-5 pb-10 pt-32 sm:px-8">
         <div className="mx-auto max-w-3xl">
           <Link

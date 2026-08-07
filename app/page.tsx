@@ -42,9 +42,44 @@ function formatDate(dateString: string) {
   })
 }
 
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Jigar Soni',
+  jobTitle: 'Performance Marketing Manager & D2C Growth Specialist',
+  location: {
+    '@type': 'Place',
+    name: 'Gujarat, India',
+  },
+  url: 'https://jigarsoni.com',
+  sameAs: [
+    'https://www.linkedin.com/in/jigar-soni/',
+    'https://x.com/ji9arsoni',
+  ],
+  knowsAbout: [
+    'Performance Marketing',
+    'D2C Growth',
+    'Meta Ads',
+    'Google Ads',
+    'Retention Marketing',
+    'Unit Economics',
+    'Paid Media Strategy',
+    'E-commerce Growth',
+  ],
+  workLocation: {
+    '@type': 'Place',
+    name: 'Remote',
+  },
+  description: 'Performance marketer with 8+ years of experience managing ₹70L+ monthly ad spend across D2C brands in apparel, skincare, FMCG, and lifestyle categories.',
+}
+
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
       {/* Hero */}
       <section className="px-5 pb-20 pt-36 sm:px-8">
         <div className="mx-auto max-w-6xl">
