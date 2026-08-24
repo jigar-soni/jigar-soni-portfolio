@@ -9,6 +9,23 @@ export type Note = {
 
 export const notes: Note[] = [
   {
+    slug: 'blessing-and-curse-of-measurement',
+    title: 'The blessing and the curse of measurement',
+    date: '2026-08-24',
+    category: 'Thinking',
+    excerpt:
+      "The ability to measure things might be marketing's greatest blessing — and its greatest curse. Measurement doesn't make a channel expensive. It just makes the expense impossible to ignore.",
+    body: [
+      "The ability to measure things might be marketing's greatest blessing — and its greatest curse.",
+      'A client I recently worked with ran a full-page ad on the second page of the Times of India to generate leads. I can only imagine what that cost. It brought in 94 leads.',
+      'Around the same time, I was running their Meta Ads. We spent ₹74,000 and generated over 1,200 leads.',
+      'And yet, the client walked away convinced that Meta was the expensive channel.',
+      "Here's the curse hiding inside the blessing: digital is measurable to the last rupee, so every rupee gets interrogated. Print isn't — so it escapes the same scrutiny. The channel you can measure ends up carrying the burden of proof, while the channel you can't quietly gets a pass. Cost-per-lead only feels high when you're actually forced to look at it.",
+      "I don't have full visibility into how many of those 1,200 leads converted. But even with generous assumptions about the print ad's downstream performance, the math almost certainly still favours Meta — by a wide margin.",
+      "Measurement doesn't make a channel expensive. It just makes the expense impossible to ignore.",
+    ],
+  },
+  {
     slug: 'engagement-juice',
     title: 'Engagement Juice: the hidden value of organic social',
     date: '2026-08-07',
