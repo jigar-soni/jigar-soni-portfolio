@@ -9,6 +9,24 @@ export const metadata: Metadata = {
 
 const caseStudies: CaseStudy[] = [
   {
+    id: 'sports-nutrition-incrementality',
+    tag: 'Sports Nutrition · Google Ads · Incrementality',
+    category: 'Paid Acquisition & Scaling',
+    context: 'Agency · Client work',
+    title: 'Google Ads went from 3% of spend to 16%. The business grew ₹85L and organic never moved.',
+    summary:
+      'A D2C sports-nutrition brand doing ~₹5Cr a month, with a paid account that was almost entirely Meta. Google was too small to judge at ₹0.5L a month. I scaled it 8× in a month — 46% of all new budget — then measured the result on deduplicated store sales rather than on what either platform claimed for itself.',
+    details: [
+      'Store sales grew 17% month-on-month, ₹4.97Cr → ₹5.82Cr (+₹85L)',
+      '10.7× marginal MER — ₹85L of additional sales on ₹7.9L of additional spend',
+      'Google Ads scaled 8.2× (₹0.5L → ₹4.1L) while its reported RoAS improved from 6.5× to 8.7×',
+      "Non-paid revenue held flat at ~₹2.5Cr and Meta's RoAS held at 14.2× — no visible cannibalisation",
+      'Platforms claimed ₹88L of growth against ₹85L actual; recommended a geo-holdout for causal proof',
+    ],
+    note: 'Conversion Lab · June – July 2026',
+    caseStudyLink: '/work/sports-nutrition-incrementality',
+  },
+  {
     id: 'inventory-intelligence',
     tag: 'Ethnicwear · Inventory Analysis · Growth Strategy',
     category: 'Growth Strategy',
