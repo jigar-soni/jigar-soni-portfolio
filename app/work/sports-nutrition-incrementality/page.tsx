@@ -11,12 +11,12 @@ const timeline = [
   {
     phase: 'Diagnosis',
     heading: 'Google was a rounding error nobody could defend.',
-    body: 'The account was Meta-led by a wide margin — ₹16.4L on Meta against ₹0.5L on Google, roughly 3% of paid spend. The reported RoAS on that small Google budget was 6.5×, the weakest line in the account. The honest question was not whether Google looked efficient, but whether it was adding demand or quietly harvesting searches the brand would have won anyway.',
+    body: 'The account was Meta-led by a wide margin — ₹16.4L on Meta against ₹0.5L on Google, roughly 3% of paid spend. Google was my side of it, and the reported RoAS on that small budget was 6.5×, the weakest line in the account. The honest question was not whether Google looked efficient, but whether it was adding demand or quietly harvesting searches the brand would have won anyway.',
   },
   {
     phase: 'Scale',
-    heading: 'Put 46% of the new budget into the unproven channel.',
-    body: 'Total paid spend grew 47% month-on-month, from ₹17.0L to ₹24.9L. Of that ₹7.9L of new money, ₹3.6L went to Google — taking it from ₹0.5L to ₹4.1L, an 8.2× increase, while Meta continued to scale 26% in parallel. Google went from 3% of paid spend to 16%.',
+    heading: 'Scaled the unproven channel 8× in a month.',
+    body: 'Google went from ₹0.5L to ₹4.1L — an 8.2× increase, and 46% of the ₹7.9L of new money the account put to work that month. That took it from 3% of paid spend to 16%. Meta scaled 26% over the same period under a colleague, so total paid spend across the account grew 47%, from ₹17.0L to ₹24.9L.',
   },
   {
     phase: 'Measurement',
@@ -75,7 +75,7 @@ const evidence = [
   {
     value: '14.2×',
     heading: "Meta's efficiency held while it also scaled",
-    body: 'Meta RoAS moved 14.6× to 14.2× on 26% more spend. Adding a second channel at nearly half the incremental budget did not come at the expense of the channel that was already working.',
+    body: 'On the other side of the account, Meta RoAS moved 14.6× to 14.2× on 26% more spend. Putting nearly half the incremental budget into Google did not come at the expense of the channel that was already working.',
   },
 ]
 
@@ -103,8 +103,8 @@ export default function SportsNutritionCaseStudy() {
               <p className="mt-1.5 text-[14px] font-medium text-ink">June – July 2026</p>
             </div>
             <div>
-              <p className="text-[11px] uppercase tracking-label text-muted">Channels</p>
-              <p className="mt-1.5 text-[14px] font-medium text-ink">Meta Ads · Google Ads</p>
+              <p className="text-[11px] uppercase tracking-label text-muted">Channel</p>
+              <p className="mt-1.5 text-[14px] font-medium text-ink">Google Ads</p>
             </div>
             <div>
               <p className="text-[11px] uppercase tracking-label text-muted">Company</p>
@@ -133,8 +133,10 @@ export default function SportsNutritionCaseStudy() {
             </div>
           </div>
           <p className="mt-6 text-[13px] leading-relaxed text-muted/70">
-            Client anonymised. Figures are from a single month-on-month performance review of a D2C sports-nutrition
-            brand. Marginal MER is calculated as the change in store sales divided by the change in total paid spend.
+            Client anonymised. I managed Google Ads on this account; Meta was run by a colleague on the same team.
+            Meta figures appear throughout as account context, because the incrementality question cannot be read
+            without them. Figures are from a single month-on-month performance review of a D2C sports-nutrition brand.
+            Marginal MER is calculated as the change in store sales divided by the change in total paid spend.
           </p>
         </div>
       </section>
@@ -363,7 +365,8 @@ export default function SportsNutritionCaseStudy() {
               saying so is part of the job.
             </p>
             <p className="mt-6 text-[13px] leading-relaxed text-muted/70">
-              Agency client work at Conversion Lab. Brand, sub-brand and product names withheld.
+              Agency client work at Conversion Lab. I ran Google Ads on this account and did the incrementality
+              analysis; Meta was managed by a colleague on the same team. Brand, sub-brand and product names withheld.
             </p>
           </div>
         </div>
