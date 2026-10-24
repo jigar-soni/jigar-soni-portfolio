@@ -8,7 +8,7 @@ export type CaseStudy = {
   id: string
   tag: string
   category: string
-  context: 'Agency · Client work' | 'In-house role'
+  context: 'Agency · Client work' | 'In-house role' | 'Freelance'
   activeClient?: boolean
   title: string
   summary: string

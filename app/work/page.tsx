@@ -47,20 +47,20 @@ const caseStudies: CaseStudy[] = [
   },
   {
     id: 'literary-festival-registrations',
-    tag: 'Events · Lead Generation · Paid Media & CRM',
+    tag: 'Events · Lead Generation · Meta & Google Ads',
     category: 'Lead Gen',
-    context: 'Agency · Client work',
+    context: 'Freelance',
     title: '11K+ registrations. ₹18–23 per registered person. One connected funnel.',
     summary:
-      "A free-entry children's literary festival needed to attract thousands of families beyond its existing community. I built the paid acquisition strategy across Meta and Google, with CRM support to keep registrants engaged beyond the initial conversion. For a free event, the hard part wasn't generating leads — it was knowing what a lead was worth.",
+      "A free-entry children's literary festival needed to attract thousands of families beyond its existing community. I built and ran the paid acquisition strategy across Meta Ads and Google Ads. For a free event, the hard part wasn't generating leads — it was knowing what a lead was actually worth.",
     details: [
       'Consolidated registrations of 11K–12.7K (estimated, after de-duplication)',
       '2,563 Meta lead-form leads at approximately ₹59 per lead',
       'Estimated ₹18–23 per registered person once multiple attendees per form were counted',
       'Approximately 80% of registrations came from outside the existing community',
-      '93.1% WhatsApp delivery rate across confirmations and reminders',
+      '32.8% click-through rate on Google Search, capturing demand that already existed',
     ],
-    note: 'Conversion Lab · ~7-week pre-event campaign',
+    note: 'Freelance · ~7-week pre-event campaign',
     caseStudyLink: '/work/literary-festival-registrations',
   },
   {

@@ -4,14 +4,14 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: "Children's Literary Festival — Event Lead Generation",
   description:
-    'How a connected Meta, Google Search and CRM funnel drove an estimated 11,000+ registrations for a free-entry children\'s literary festival at ₹18–23 per registered person.',
+    'How Meta Ads and Google Ads drove an estimated 11,000+ registrations for a free-entry children\'s literary festival at ₹18–23 per registered person.',
 }
 
 const timeline = [
   {
     phase: 'Strategy',
     heading: 'Built the acquisition strategy.',
-    body: 'Owned media strategy, campaign setup and creative direction across Meta Ads and Google Search. Lead generation carried the registrations, while awareness, Reels engagement and broader audience testing did the work of discovery and reach. Each campaign was judged against its own objective — a ThruPlay and a form fill are not the same currency.',
+    body: 'Owned media strategy, campaign setup and creative direction across Meta Ads and Google Ads. Lead generation carried the registrations, while awareness, Reels engagement and broader audience testing did the work of discovery and reach. Each campaign was judged against its own objective — a ThruPlay and a form fill are not the same currency.',
   },
   {
     phase: 'Search',
@@ -22,11 +22,6 @@ const timeline = [
     phase: 'Measurement',
     heading: 'Looked beyond cost per lead.',
     body: 'Reconciled registrations across the Meta lead forms and the direct registration platform, accounting for duplicate sign-ups and for the multiple attendees a single form often represented. That reconciliation is what turned a lead count into a registration count.',
-  },
-  {
-    phase: 'CRM',
-    heading: 'Extended the funnel past the sign-up.',
-    body: 'Supported CRM maintenance across WhatsApp and email — confirmations, reminders and reactivation campaigns — so that registering was the start of the journey rather than the end of it.',
   },
 ]
 
@@ -42,7 +37,6 @@ const signals = [
   { value: '32.8%', label: 'Google Search click-through rate — roughly one in three people who saw the ad clicked it' },
   { value: '86%', label: 'Share of Meta form leads that came through Instagram placements' },
   { value: '91%', label: "Registrants who completed the child's age-group field on the form" },
-  { value: '93.1%', label: 'WhatsApp delivery rate across confirmations and reminders' },
 ]
 
 export default function LiteraryFestivalCaseStudy() {
@@ -58,7 +52,7 @@ export default function LiteraryFestivalCaseStudy() {
             <span aria-hidden>←</span> All work
           </Link>
           <p className="mt-8 text-[11.5px] uppercase tracking-label text-muted">
-            Events · Lead Generation · Paid Media &amp; CRM
+            Events · Lead Generation · Meta &amp; Google Ads
           </p>
           <h1 className="mt-4 font-display italic text-[2.2rem] font-normal leading-snug tracking-tight text-ink sm:text-[2.8rem]">
             11K+ registrations. ₹18–23 per registered person. One connected funnel.
@@ -70,11 +64,11 @@ export default function LiteraryFestivalCaseStudy() {
             </div>
             <div>
               <p className="text-[11px] uppercase tracking-label text-muted">Channels</p>
-              <p className="mt-1.5 text-[14px] font-medium text-ink">Meta Ads · Google Search · CRM</p>
+              <p className="mt-1.5 text-[14px] font-medium text-ink">Meta Ads · Google Ads</p>
             </div>
             <div>
-              <p className="text-[11px] uppercase tracking-label text-muted">Company</p>
-              <p className="mt-1.5 text-[14px] font-medium text-ink">Conversion Lab</p>
+              <p className="text-[11px] uppercase tracking-label text-muted">Engagement</p>
+              <p className="mt-1.5 text-[14px] font-medium text-ink">Freelance</p>
             </div>
           </div>
         </div>
@@ -116,8 +110,7 @@ export default function LiteraryFestivalCaseStudy() {
           <div className="mt-6 space-y-5 text-[15.5px] leading-loose text-muted">
             <p>
               A free-entry children's literary festival needed to attract thousands of families from beyond its
-              existing community. I built the paid acquisition strategy across Meta and Google, with CRM support to
-              keep registrants engaged beyond the initial conversion.
+              existing community. I built and ran the paid acquisition strategy across Meta Ads and Google Ads.
             </p>
             <p>
               For a free event, registrations are easy to overcount as success. One parent could register several
@@ -125,8 +118,9 @@ export default function LiteraryFestivalCaseStudy() {
               on its own would have said very little about whether the campaign was working.
             </p>
             <p>
-              So the brief had three parts running at once: acquire registrations efficiently, reach families who did
-              not already know the festival, and keep those registrations engaged until the event itself.
+              So the brief came down to two things running at once: acquire registrations efficiently, and reach
+              families who did not already know the festival — then measure both in a unit that actually meant
+              something.
             </p>
           </div>
         </div>
@@ -209,9 +203,9 @@ export default function LiteraryFestivalCaseStudy() {
               registered person.
             </p>
             <p className="mt-4 text-[15.5px] leading-loose text-muted">
-              The second shift was treating acquisition and follow-up as parts of the same funnel. Meta generated
-              demand, Search captured existing intent, and CRM carried the registration forward from confirmation to
-              reminder. Approximately four in five registrations came from outside the organiser's existing community,
+              The second shift was making the two platforms play different positions instead of competing for the
+              same credit. Meta generated demand from a standing start; Search captured the intent that demand
+              created. Approximately four in five registrations came from outside the organiser's existing community,
               which suggests the campaign was reaching beyond the audience the festival already had.
             </p>
             <div className="mt-8 grid gap-3 sm:grid-cols-3">
@@ -237,7 +231,7 @@ export default function LiteraryFestivalCaseStudy() {
           <h2 className="mt-5 font-display italic text-[1.7rem] font-normal tracking-tight text-ink">
             The form told us who was actually coming.
           </h2>
-          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+          <div className="mt-8 grid gap-4 sm:grid-cols-3">
             {signals.map((s) => (
               <div key={s.value} className="rounded-[20px] border border-subtle bg-white p-6 shadow-soft">
                 <p className="font-display italic text-[1.8rem] font-normal text-ink">{s.value}</p>
@@ -264,14 +258,14 @@ export default function LiteraryFestivalCaseStudy() {
               the registration platform and count the people each form represents.
             </p>
             <p className="mt-4 text-[16px] leading-loose text-muted">
-              The other half of it is refusing to treat the form fill as the finish line. Paid media created the
-              demand and caught the intent; CRM kept the registration alive afterwards. Run as one funnel rather than
-              two disconnected efforts, an estimated 11,000-plus registrations became something the organiser could
-              actually build on.
+              The other half of it is giving each platform a job it is actually good at. Meta built demand where none
+              existed; Search picked up the intent cheaply once it did. Run that way — and measured per registered
+              person rather than per lead — an estimated 11,000-plus registrations came in at a cost a free event
+              could justify.
             </p>
             <p className="mt-6 text-[13px] leading-relaxed text-muted/70">
-              My role: media strategy, campaign setup and creative direction, with additional support for CRM
-              maintenance. Client and event identifiers withheld.
+              Freelance engagement. My role: media strategy, campaign setup and creative direction across Meta Ads
+              and Google Ads. Client and event identifiers withheld.
             </p>
           </div>
         </div>
