@@ -13,6 +13,7 @@ const caseStudies: CaseStudy[] = [
     tag: 'Sports Nutrition · Google Ads · Incrementality',
     category: 'Paid Acquisition & Scaling',
     context: 'Agency · Client work',
+    activeClient: true,
     title: 'Google Ads went from 3% of spend to 16%. The business grew ₹85L and organic never moved.',
     summary:
       'A D2C sports-nutrition brand doing ~₹5Cr a month, with a paid account that was almost entirely Meta. Google — my side of the account — was too small to judge at ₹0.5L a month. I scaled it 8× in a month, taking 46% of the account\'s new spend, then measured the result on deduplicated store sales rather than on what either platform claimed for itself.',
